@@ -759,6 +759,11 @@ h3 {
   max-width: 780px;
 }
 
+.resources-section .button:not(.disabled) {
+  color: #0b151d;
+  background: #fff;
+}
+
 .site-footer {
   display: flex;
   justify-content: space-between;
