@@ -56,15 +56,15 @@
     <line x1="110" y1="432" x2="1070" y2="432" stroke="#aeb8c5" stroke-width="1.4"/>
     <line x1="110" y1="132" x2="110" y2="432" stroke="#aeb8c5" stroke-width="1.4"/>
 
-    <path d="M 110 229.9 L 430 198.4 L 750 185.6 L 1070 180.8 L 1070 228.8 L 750 258.8 L 430 297.4 L 110 364.1 Z" fill="url(#gainFill)"/>
+    <path d="M 110 229.9 L 430 198.4 L 750 185.6 L 1070 180.8 L 1070 228.8 L 750 248.6 L 430 279.4 L 110 364.1 Z" fill="url(#gainFill)"/>
 
-    <path d="M 110 364.1 L 430 297.4 L 750 258.8 L 1070 228.8" fill="none" stroke="#7e8794" stroke-width="4.2" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M 110 364.1 L 430 279.4 L 750 248.6 L 1070 228.8" fill="none" stroke="#7e8794" stroke-width="4.2" stroke-linecap="round" stroke-linejoin="round"/>
     <path d="M 110 229.9 L 430 198.4 L 750 185.6 L 1070 180.8" fill="none" stroke="#256f9f" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
 
     <g fill="#ffffff" stroke="#7e8794" stroke-width="3">
       <circle cx="110" cy="364.1" r="7"/>
-      <circle cx="430" cy="297.4" r="7"/>
-      <circle cx="750" cy="258.8" r="7"/>
+      <circle cx="430" cy="279.4" r="7"/>
+      <circle cx="750" cy="248.6" r="7"/>
       <circle cx="1070" cy="228.8" r="7"/>
     </g>
     <g fill="#ffffff" stroke="#256f9f" stroke-width="3.4">
@@ -82,8 +82,8 @@
     </g>
     <g fill="#5f6875" font-size="13" font-weight="720">
       <text x="110" y="391" text-anchor="middle">18.1</text>
-      <text x="430" y="324" text-anchor="middle">35.9</text>
-      <text x="750" y="286" text-anchor="middle">46.2</text>
+      <text x="430" y="306" text-anchor="middle">40.7</text>
+      <text x="750" y="275" text-anchor="middle">48.9</text>
       <text x="1070" y="256" text-anchor="middle">54.2</text>
     </g>
 
