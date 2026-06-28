@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       name="description"
-      content="WALA learns executable latent actions from action-labeled demonstrations and action-free videos through latent world supervision."
+      content="WALA is a framework for learning executable latent actions from action-labeled demonstrations and action-free videos."
     />
     <title>WALA | Learning Executable Latent Actions</title>
     <link rel="stylesheet" href="styles.css" />
@@ -30,11 +30,16 @@
         <img
           class="hero-bg"
           src="assets/images/wala_policy.png"
-          alt="Policy training diagram with latent world model supervision."
+          alt="WALA policy training framework with latent action targets, future dynamics prediction, and robot action prediction."
         />
         <div class="hero-shade"></div>
         <div class="hero-content">
-          <p class="eyebrow">World- and Action-supervised Latent Actions</p>
+          <p class="eyebrow">
+            <span class="acronym-letter">W</span>orld- and
+            <span class="acronym-letter">A</span>ction-supervised
+            <span class="acronym-letter">L</span>atent
+            <span class="acronym-letter">A</span>ctions
+          </p>
           <h1 id="hero-title">
             WALA Learning Executable Latent Actions from Action-Labeled
             Demonstrations and Action-Free Videos
@@ -123,7 +128,7 @@
             a trainable latent world model.
           </p>
           <div class="figure-grid">
-            <figure class="figure-panel">
+            <figure class="figure-panel lam-figure">
               <img
                 src="assets/images/wala_lam.png"
                 alt="Semantic-geometric latent action model pretraining diagram."
@@ -164,6 +169,7 @@
         <div class="section-inner">
           <p class="section-kicker">Experiments</p>
           <div class="tables-stack">
+            <!--
             <article class="table-card">
               <div class="table-heading">
                 <span class="result-tag">RoboTwin 2.0</span>
@@ -233,6 +239,7 @@
                 Baseline results are collected from publicly released reports.
               </p>
             </article>
+            -->
 
             <article class="table-card">
               <div class="table-heading">
@@ -361,17 +368,25 @@
               </div>
               <div class="table-wrap">
                 <table class="paper-table ablation-table">
+                  <colgroup>
+                    <col class="ablation-variant-col" />
+                    <col class="ablation-supervision-col" span="3" />
+                    <col class="ablation-score-col" span="2" />
+                  </colgroup>
                   <thead>
                     <tr>
-                      <th rowspan="2">Variant</th>
+                      <th class="empty-head"></th>
                       <th colspan="3">Supervision</th>
-                      <th rowspan="2">Avg.</th>
-                      <th rowspan="2">Gain</th>
+                      <th class="empty-head"></th>
+                      <th class="empty-head"></th>
                     </tr>
                     <tr>
+                      <th>Variant</th>
                       <th>LAM Target</th>
                       <th>Semantic Pred.</th>
                       <th>Geometric Pred.</th>
+                      <th>Avg.</th>
+                      <th>Gain</th>
                     </tr>
                   </thead>
                   <tbody>
@@ -420,6 +435,20 @@
               </div>
             </article>
 
+            <article class="table-card wide chart-card">
+              <div class="table-heading">
+                <span class="result-tag">Data Scaling</span>
+                <h3>Data scaling on RoboCasa</h3>
+              </div>
+              <div class="chart-wrap">
+                <img
+                  class="chart-image"
+                  src="assets/images/robocasa_data_scaling.svg"
+                  alt="Line chart comparing Base Policy and WALA success rates on RoboCasa across total data budgets."
+                />
+              </div>
+            </article>
+
             <article class="table-card wide real-robot-card">
               <div class="table-heading">
                 <span class="result-tag">Real Robot</span>
@@ -435,8 +464,7 @@
 
       <section id="videos" class="section videos-section">
         <div class="section-inner">
-          <p class="section-kicker">RoboCasa Simulation Rollouts</p>
-          <h2>One successful rollout from each GR1 tabletop task.</h2>
+          <p class="section-kicker">RoboCasa Simulation Rollout Videos</p>
           <div class="robocasa-video-grid">
             <article class="video-tile"><video controls muted playsinline preload="metadata" src="assets/videos/robocasa/rollout_01.mp4"></video></article>
             <article class="video-tile"><video controls muted playsinline preload="metadata" src="assets/videos/robocasa/rollout_02.mp4"></video></article>

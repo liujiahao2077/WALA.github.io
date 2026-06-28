@@ -140,6 +140,13 @@ a {
   color: #f2c88d;
 }
 
+.acronym-letter {
+  color: #64d4d2;
+  font-size: 2em;
+  font-weight: 950;
+  line-height: 1;
+}
+
 h1,
 h2,
 h3,
@@ -347,6 +354,11 @@ h3 {
   background: #fff;
 }
 
+.lam-figure img {
+  width: min(85%, 1020px);
+  margin: 0 auto;
+}
+
 .figure-panel figcaption {
   padding: 18px 22px 22px;
   color: var(--muted);
@@ -358,7 +370,7 @@ h3 {
 }
 
 .method-lead {
-  width: min(920px, 100%);
+  width: 100%;
   color: var(--muted);
   font-size: 1.05rem;
 }
@@ -389,6 +401,16 @@ h3 {
   padding: 18px 24px 24px;
   border-top: 0;
   font-size: 0.98rem;
+}
+
+.chart-wrap {
+  padding: 22px 24px 26px;
+}
+
+.chart-image {
+  width: 100%;
+  border: 1px solid #e4eaf1;
+  background: #fff;
 }
 
 .table-heading {
@@ -484,7 +506,6 @@ h3 {
 .second {
   text-decoration: underline;
   text-underline-offset: 3px;
-  font-weight: 760;
 }
 
 .check {
@@ -494,6 +515,39 @@ h3 {
 
 .dash {
   color: #9aa4b2;
+}
+
+.paper-table.ablation-table {
+  min-width: 760px;
+  table-layout: fixed;
+}
+
+.ablation-variant-col {
+  width: 36%;
+}
+
+.ablation-supervision-col {
+  width: 14%;
+}
+
+.ablation-score-col {
+  width: 11%;
+}
+
+.paper-table.ablation-table thead th {
+  text-align: center;
+}
+
+.paper-table.ablation-table thead .empty-head {
+  color: transparent;
+}
+
+.paper-table.ablation-table tbody td:first-child {
+  text-align: left;
+}
+
+.paper-table.ablation-table tbody td:not(:first-child) {
+  text-align: center;
 }
 
 .table-note {
