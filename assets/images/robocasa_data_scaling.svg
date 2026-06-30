@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1180 620" role="img" aria-labelledby="title desc">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1260 620" role="img" aria-labelledby="title desc">
   <title id="title">RoboCasa data scaling results</title>
   <desc id="desc">Line chart comparing Base Policy, WALA with the same action-labeled data, and WALA with action-free videos on RoboCasa-GR1-Tabletop across total data budgets.</desc>
   <defs>
@@ -11,8 +11,8 @@
     </linearGradient>
   </defs>
 
-  <rect width="1180" height="620" fill="#ffffff"/>
-  <rect x="34" y="28" width="1112" height="556" rx="18" fill="#fbfdff" stroke="#dfe4ec" filter="url(#softShadow)"/>
+  <rect width="1260" height="620" fill="#ffffff"/>
+  <rect x="34" y="28" width="1192" height="556" rx="18" fill="#fbfdff" stroke="#dfe4ec" filter="url(#softShadow)"/>
 
   <g font-family="Inter, Arial, sans-serif">
     <text x="72" y="76" fill="#13151a" font-size="24" font-weight="820">
@@ -22,7 +22,7 @@
       Two WALA settings: action-labeled only, or 10% labels plus action-free videos.
     </text>
 
-    <g transform="translate(744 32)">
+    <g transform="translate(812 38)">
       <rect x="0" y="0" width="382" height="92" rx="15" fill="#ffffff" stroke="#dfe4ec"/>
       <line x1="22" y1="22" x2="66" y2="22" stroke="#1f9d75" stroke-width="5" stroke-linecap="round"/>
       <circle cx="44" cy="22" r="7.5" fill="#ffffff" stroke="#1f9d75" stroke-width="3.2"/>
@@ -38,14 +38,14 @@
       <text x="174" y="77" fill="#5d6572" font-size="13" font-weight="680">all action-labeled</text>
     </g>
 
-    <rect x="110" y="158" width="960" height="274" rx="12" fill="#ffffff" stroke="#edf1f6"/>
+    <rect x="120" y="158" width="1020" height="274" rx="12" fill="#ffffff" stroke="#edf1f6"/>
 
     <g stroke="#dfe6ef" stroke-width="1">
-      <line x1="110" y1="158" x2="1070" y2="158"/>
-      <line x1="110" y1="226.5" x2="1070" y2="226.5"/>
-      <line x1="110" y1="295" x2="1070" y2="295"/>
-      <line x1="110" y1="363.5" x2="1070" y2="363.5"/>
-      <line x1="110" y1="432" x2="1070" y2="432"/>
+      <line x1="120" y1="158" x2="1140" y2="158"/>
+      <line x1="120" y1="226.5" x2="1140" y2="226.5"/>
+      <line x1="120" y1="295" x2="1140" y2="295"/>
+      <line x1="120" y1="363.5" x2="1140" y2="363.5"/>
+      <line x1="120" y1="432" x2="1140" y2="432"/>
     </g>
 
     <g fill="#687282" font-size="13">
@@ -57,73 +57,85 @@
     </g>
     <text x="56" y="295" transform="rotate(-90 56 295)" fill="#5d6572" font-size="14" font-weight="720">Success rate (%)</text>
 
-    <line x1="110" y1="432" x2="1070" y2="432" stroke="#aeb8c5" stroke-width="1.4"/>
-    <line x1="110" y1="158" x2="110" y2="432" stroke="#aeb8c5" stroke-width="1.4"/>
+    <line x1="120" y1="432" x2="1140" y2="432" stroke="#aeb8c5" stroke-width="1.4"/>
+    <line x1="120" y1="158" x2="120" y2="432" stroke="#aeb8c5" stroke-width="1.4"/>
 
-    <path d="M 110 247.4 L 430 218.6 L 750 207 L 1070 199.8 L 1070 246.4 L 750 264.5 L 430 292.6 L 110 370 Z" fill="url(#gainFill)"/>
+    <path d="M 120 247.4 L 460 218.6 L 800 207 L 1140 199.8 L 1140 246.4 L 800 264.5 L 460 292.6 L 120 370 Z" fill="url(#gainFill)"/>
 
-    <path d="M 110 370 L 430 292.6 L 750 264.5 L 1070 246.4" fill="none" stroke="#7e8794" stroke-width="4.2" stroke-linecap="round" stroke-linejoin="round"/>
-    <path d="M 110 247.4 L 430 218.6 L 750 207 L 1070 199.8" fill="none" stroke="#256f9f" stroke-width="4.8" stroke-linecap="round" stroke-linejoin="round"/>
-    <path d="M 110 247.4 L 430 204.2 L 750 188.1 L 1070 174.4" fill="none" stroke="#1f9d75" stroke-width="5.2" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M 120 370 L 460 292.6 L 800 264.5 L 1140 246.4" fill="none" stroke="#7e8794" stroke-width="4.2" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M 120 247.4 L 460 218.6 L 800 207 L 1140 199.8" fill="none" stroke="#256f9f" stroke-width="4.8" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M 120 247.4 L 460 204.2 L 800 188.1 L 1140 174.4" fill="none" stroke="#1f9d75" stroke-width="5.2" stroke-linecap="round" stroke-linejoin="round"/>
 
     <g fill="#ffffff" stroke="#7e8794" stroke-width="3">
-      <circle cx="110" cy="370" r="7"/>
-      <circle cx="430" cy="292.6" r="7"/>
-      <circle cx="750" cy="264.5" r="7"/>
-      <circle cx="1070" cy="246.4" r="7"/>
+      <circle cx="120" cy="370" r="7"/>
+      <circle cx="460" cy="292.6" r="7"/>
+      <circle cx="800" cy="264.5" r="7"/>
+      <circle cx="1140" cy="246.4" r="7"/>
     </g>
     <g fill="#ffffff" stroke="#256f9f" stroke-width="3.4">
-      <circle cx="110" cy="247.4" r="8"/>
-      <circle cx="430" cy="218.6" r="8"/>
-      <circle cx="750" cy="207" r="8"/>
-      <circle cx="1070" cy="199.8" r="8"/>
+      <circle cx="120" cy="247.4" r="8"/>
+      <circle cx="460" cy="218.6" r="8"/>
+      <circle cx="800" cy="207" r="8"/>
+      <circle cx="1140" cy="199.8" r="8"/>
     </g>
     <g fill="#ffffff" stroke="#1f9d75" stroke-width="3.5">
-      <circle cx="110" cy="247.4" r="8.2"/>
-      <circle cx="430" cy="204.2" r="8.2"/>
-      <circle cx="750" cy="188.1" r="8.2"/>
-      <circle cx="1070" cy="174.4" r="8.2"/>
+      <circle cx="120" cy="247.4" r="8.2"/>
+      <circle cx="460" cy="204.2" r="8.2"/>
+      <circle cx="800" cy="188.1" r="8.2"/>
+      <circle cx="1140" cy="174.4" r="8.2"/>
     </g>
 
     <g fill="#126d52" font-size="14" font-weight="860">
-      <text x="110" y="225" text-anchor="middle">53.9</text>
-      <text x="430" y="181" text-anchor="middle">66.5</text>
-      <text x="750" y="166" text-anchor="middle">71.2</text>
-      <text x="1070" y="151" text-anchor="middle">75.2</text>
+      <text x="120" y="225" text-anchor="middle">53.9</text>
+      <text x="460" y="181" text-anchor="middle">66.5</text>
+      <text x="800" y="166" text-anchor="middle">71.2</text>
+      <text x="1140" y="151" text-anchor="middle">75.2</text>
     </g>
     <g fill="#16496e" font-size="13.5" font-weight="820">
-      <text x="430" y="241" text-anchor="middle">62.3</text>
-      <text x="750" y="230" text-anchor="middle">65.7</text>
-      <text x="1070" y="223" text-anchor="middle">67.8</text>
+      <text x="460" y="241" text-anchor="middle">62.3</text>
+      <text x="800" y="230" text-anchor="middle">65.7</text>
+      <text x="1140" y="223" text-anchor="middle">67.8</text>
     </g>
     <g fill="#5f6875" font-size="13" font-weight="720">
-      <text x="110" y="397" text-anchor="middle">18.1</text>
-      <text x="430" y="320" text-anchor="middle">40.7</text>
-      <text x="750" y="292" text-anchor="middle">48.9</text>
-      <text x="1070" y="274" text-anchor="middle">54.2</text>
+      <text x="120" y="397" text-anchor="middle">18.1</text>
+      <text x="460" y="320" text-anchor="middle">40.7</text>
+      <text x="800" y="292" text-anchor="middle">48.9</text>
+      <text x="1140" y="274" text-anchor="middle">54.2</text>
     </g>
 
     <g fill="#3b4654" font-size="13" font-weight="760">
-      <text x="110" y="471" text-anchor="middle">10%</text>
-      <text x="430" y="471" text-anchor="middle">40%</text>
-      <text x="750" y="471" text-anchor="middle">70%</text>
-      <text x="1070" y="471" text-anchor="middle">100%</text>
+      <text x="120" y="471" text-anchor="middle">10%</text>
+      <text x="460" y="471" text-anchor="middle">40%</text>
+      <text x="800" y="471" text-anchor="middle">70%</text>
+      <text x="1140" y="471" text-anchor="middle">100%</text>
     </g>
 
-    <g fill="#5d6572" font-size="12.5">
-      <text x="110" y="492" text-anchor="middle">Mixed WALA: 0% action-free</text>
-      <text x="430" y="492" text-anchor="middle">Mixed WALA: 30% action-free</text>
-      <text x="750" y="492" text-anchor="middle">Mixed WALA: 60% action-free</text>
-      <text x="1070" y="492" text-anchor="middle">Mixed WALA: 90% action-free</text>
+    <g fill="#5d6572" font-size="12.2">
+      <text x="120" y="492" text-anchor="middle">
+        <tspan x="120" dy="0">Mixed WALA</tspan>
+        <tspan x="120" dy="16">0% action-free</tspan>
+      </text>
+      <text x="460" y="492" text-anchor="middle">
+        <tspan x="460" dy="0">Mixed WALA</tspan>
+        <tspan x="460" dy="16">30% action-free</tspan>
+      </text>
+      <text x="800" y="492" text-anchor="middle">
+        <tspan x="800" dy="0">Mixed WALA</tspan>
+        <tspan x="800" dy="16">60% action-free</tspan>
+      </text>
+      <text x="1140" y="492" text-anchor="middle">
+        <tspan x="1140" dy="0">Mixed WALA</tspan>
+        <tspan x="1140" dy="16">90% action-free</tspan>
+      </text>
     </g>
 
-    <text x="590" y="526" fill="#4d5968" font-size="14" font-weight="760" text-anchor="middle">
+    <text x="630" y="536" fill="#4d5968" font-size="14" font-weight="760" text-anchor="middle">
       Total RoboCasa training data used
     </text>
 
-    <text x="590" y="552" fill="#5d6572" font-size="13" text-anchor="middle">
-      <tspan x="590" dy="0">Base and WALA action-labeled only use the same action-labeled data at each x-axis point.</tspan>
-      <tspan x="590" dy="20">Mixed WALA keeps 10% labels and uses action-free videos for the remaining budget.</tspan>
+    <text x="630" y="560" fill="#5d6572" font-size="13" text-anchor="middle">
+      <tspan x="630" dy="0">Base and WALA action-labeled only use the same action-labeled data at each x-axis point.</tspan>
+      <tspan x="630" dy="18">Mixed WALA keeps 10% labels and uses action-free videos for the remaining budget.</tspan>
     </text>
   </g>
 </svg>
