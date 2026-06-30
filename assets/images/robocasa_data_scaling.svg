@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1180 620" role="img" aria-labelledby="title desc">
   <title id="title">RoboCasa data scaling results</title>
-  <desc id="desc">Line chart comparing Base Policy and WALA success rates on RoboCasa-GR1-Tabletop across total data budgets. Base Policy uses action-labeled demonstrations at each budget, while WALA keeps 10 percent action-labeled demonstrations and adds videos without robot action labels.</desc>
+  <desc id="desc">Line chart comparing Base Policy, WALA with the same action-labeled data, and WALA with action-free videos on RoboCasa-GR1-Tabletop across total data budgets.</desc>
   <defs>
     <filter id="softShadow" x="-8%" y="-8%" width="116%" height="124%">
       <feDropShadow dx="0" dy="12" stdDeviation="12" flood-color="#132033" flood-opacity="0.12"/>
@@ -19,19 +19,23 @@
       Data scaling on RoboCasa-GR1-Tabletop
     </text>
     <text x="72" y="104" fill="#5d6572" font-size="14">
-      Same total data budget; WALA keeps 10% labels and uses the rest as action-free videos.
+      Two WALA settings: action-labeled only, or 10% labels plus action-free videos.
     </text>
 
-    <g transform="translate(782 53)">
-      <rect x="0" y="0" width="330" height="66" rx="15" fill="#ffffff" stroke="#dfe4ec"/>
-      <line x1="22" y1="22" x2="66" y2="22" stroke="#256f9f" stroke-width="5" stroke-linecap="round"/>
-      <circle cx="44" cy="22" r="7.5" fill="#ffffff" stroke="#256f9f" stroke-width="3.2"/>
-      <text x="82" y="27" fill="#16496e" font-size="14" font-weight="820">WALA</text>
-      <text x="140" y="27" fill="#5d6572" font-size="13" font-weight="680">10% labels + action-free</text>
-      <line x1="22" y1="47" x2="66" y2="47" stroke="#7e8794" stroke-width="4" stroke-linecap="round"/>
-      <circle cx="44" cy="47" r="6.5" fill="#ffffff" stroke="#7e8794" stroke-width="2.8"/>
-      <text x="82" y="52" fill="#5d6572" font-size="14" font-weight="760">Base Policy</text>
-      <text x="174" y="52" fill="#5d6572" font-size="13" font-weight="680">all action-labeled</text>
+    <g transform="translate(744 43)">
+      <rect x="0" y="0" width="382" height="92" rx="15" fill="#ffffff" stroke="#dfe4ec"/>
+      <line x1="22" y1="22" x2="66" y2="22" stroke="#1f9d75" stroke-width="5" stroke-linecap="round"/>
+      <circle cx="44" cy="22" r="7.5" fill="#ffffff" stroke="#1f9d75" stroke-width="3.2"/>
+      <text x="82" y="27" fill="#126d52" font-size="14" font-weight="820">WALA</text>
+      <text x="140" y="27" fill="#5d6572" font-size="13" font-weight="680">action-labeled only</text>
+      <line x1="22" y1="47" x2="66" y2="47" stroke="#256f9f" stroke-width="4.6" stroke-linecap="round"/>
+      <circle cx="44" cy="47" r="7" fill="#ffffff" stroke="#256f9f" stroke-width="3"/>
+      <text x="82" y="52" fill="#16496e" font-size="14" font-weight="820">WALA</text>
+      <text x="140" y="52" fill="#5d6572" font-size="13" font-weight="680">10% labels + action-free</text>
+      <line x1="22" y1="72" x2="66" y2="72" stroke="#7e8794" stroke-width="4" stroke-linecap="round"/>
+      <circle cx="44" cy="72" r="6.5" fill="#ffffff" stroke="#7e8794" stroke-width="2.8"/>
+      <text x="82" y="77" fill="#5d6572" font-size="14" font-weight="760">Base Policy</text>
+      <text x="174" y="77" fill="#5d6572" font-size="13" font-weight="680">all action-labeled</text>
     </g>
 
     <rect x="110" y="132" width="960" height="300" rx="12" fill="#ffffff" stroke="#edf1f6"/>
@@ -59,7 +63,8 @@
     <path d="M 110 229.9 L 430 198.4 L 750 185.6 L 1070 180.8 L 1070 228.8 L 750 248.6 L 430 279.4 L 110 364.1 Z" fill="url(#gainFill)"/>
 
     <path d="M 110 364.1 L 430 279.4 L 750 248.6 L 1070 228.8" fill="none" stroke="#7e8794" stroke-width="4.2" stroke-linecap="round" stroke-linejoin="round"/>
-    <path d="M 110 229.9 L 430 198.4 L 750 185.6 L 1070 180.8" fill="none" stroke="#256f9f" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M 110 229.9 L 430 198.4 L 750 185.6 L 1070 180.8" fill="none" stroke="#256f9f" stroke-width="4.8" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M 110 229.9 L 430 180.4 L 750 165 L 1070 150" fill="none" stroke="#1f9d75" stroke-width="5.2" stroke-linecap="round" stroke-linejoin="round"/>
 
     <g fill="#ffffff" stroke="#7e8794" stroke-width="3">
       <circle cx="110" cy="364.1" r="7"/>
@@ -73,12 +78,23 @@
       <circle cx="750" cy="185.6" r="8"/>
       <circle cx="1070" cy="180.8" r="8"/>
     </g>
+    <g fill="#ffffff" stroke="#1f9d75" stroke-width="3.5">
+      <circle cx="110" cy="229.9" r="8.2"/>
+      <circle cx="430" cy="180.4" r="8.2"/>
+      <circle cx="750" cy="165" r="8.2"/>
+      <circle cx="1070" cy="150" r="8.2"/>
+    </g>
 
-    <g fill="#16496e" font-size="14" font-weight="840">
-      <text x="110" y="208" text-anchor="middle">53.9</text>
-      <text x="430" y="176" text-anchor="middle">62.3</text>
-      <text x="750" y="164" text-anchor="middle">65.7</text>
-      <text x="1070" y="159" text-anchor="middle">67.0</text>
+    <g fill="#126d52" font-size="14" font-weight="860">
+      <text x="110" y="207" text-anchor="middle">53.9</text>
+      <text x="430" y="158" text-anchor="middle">67.1</text>
+      <text x="750" y="143" text-anchor="middle">71.2</text>
+      <text x="1070" y="128" text-anchor="middle">75.2</text>
+    </g>
+    <g fill="#16496e" font-size="13.5" font-weight="820">
+      <text x="430" y="221" text-anchor="middle">62.3</text>
+      <text x="750" y="207" text-anchor="middle">65.7</text>
+      <text x="1070" y="202" text-anchor="middle">67.0</text>
     </g>
     <g fill="#5f6875" font-size="13" font-weight="720">
       <text x="110" y="391" text-anchor="middle">18.1</text>
@@ -95,18 +111,19 @@
     </g>
 
     <g fill="#5d6572" font-size="12.5">
-      <text x="110" y="492" text-anchor="middle">WALA: 0% action-free</text>
-      <text x="430" y="492" text-anchor="middle">WALA: 30% action-free</text>
-      <text x="750" y="492" text-anchor="middle">WALA: 60% action-free</text>
-      <text x="1070" y="492" text-anchor="middle">WALA: 90% action-free</text>
+      <text x="110" y="492" text-anchor="middle">Mixed WALA: 0% action-free</text>
+      <text x="430" y="492" text-anchor="middle">Mixed WALA: 30% action-free</text>
+      <text x="750" y="492" text-anchor="middle">Mixed WALA: 60% action-free</text>
+      <text x="1070" y="492" text-anchor="middle">Mixed WALA: 90% action-free</text>
     </g>
 
     <text x="590" y="526" fill="#4d5968" font-size="14" font-weight="760" text-anchor="middle">
       Total RoboCasa training data used
     </text>
 
-    <text x="590" y="560" fill="#5d6572" font-size="13" text-anchor="middle">
-      At each x-axis point, both methods use the same total amount of data; only WALA replaces part of the action labels with action-free videos.
+    <text x="590" y="552" fill="#5d6572" font-size="13" text-anchor="middle">
+      <tspan x="590" dy="0">Base and WALA action-labeled only use the same action-labeled data at each x-axis point.</tspan>
+      <tspan x="590" dy="20">Mixed WALA keeps 10% labels and uses action-free videos for the remaining budget.</tspan>
     </text>
   </g>
 </svg>
