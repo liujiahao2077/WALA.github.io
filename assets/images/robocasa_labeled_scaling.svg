@@ -22,7 +22,7 @@
       Same labeled demonstrations.
     </text>
 
-    <g transform="translate(412 48)">
+    <g transform="translate(412 42)">
       <rect x="0" y="0" width="240" height="64" rx="14" fill="#ffffff" stroke="#dfe4ec"/>
       <line x1="20" y1="22" x2="58" y2="22" stroke="#1f9d75" stroke-width="4.8" stroke-linecap="round"/>
       <circle cx="39" cy="22" r="7" fill="#ffffff" stroke="#1f9d75" stroke-width="3"/>
