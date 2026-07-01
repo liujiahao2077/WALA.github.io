@@ -9,6 +9,10 @@
       <stop offset="0%" stop-color="#256f9f" stop-opacity="0.16"/>
       <stop offset="100%" stop-color="#256f9f" stop-opacity="0.035"/>
     </linearGradient>
+    <linearGradient id="labeledGainFill" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0%" stop-color="#1f9d75" stop-opacity="0.13"/>
+      <stop offset="100%" stop-color="#1f9d75" stop-opacity="0.028"/>
+    </linearGradient>
   </defs>
 
   <rect width="1260" height="620" fill="#ffffff"/>
@@ -61,6 +65,7 @@
     <line x1="120" y1="158" x2="120" y2="432" stroke="#aeb8c5" stroke-width="1.4"/>
 
     <path d="M 120 247.4 L 460 218.6 L 800 207 L 1140 199.8 L 1140 246.4 L 800 264.5 L 460 292.6 L 120 370 Z" fill="url(#gainFill)"/>
+    <path d="M 120 247.4 L 460 204.2 L 800 188.1 L 1140 174.4 L 1140 199.8 L 800 207 L 460 218.6 L 120 247.4 Z" fill="url(#labeledGainFill)"/>
 
     <path d="M 120 370 L 460 292.6 L 800 264.5 L 1140 246.4" fill="none" stroke="#7e8794" stroke-width="4.2" stroke-linecap="round" stroke-linejoin="round"/>
     <path d="M 120 247.4 L 460 218.6 L 800 207 L 1140 199.8" fill="none" stroke="#256f9f" stroke-width="4.8" stroke-linecap="round" stroke-linejoin="round"/>
