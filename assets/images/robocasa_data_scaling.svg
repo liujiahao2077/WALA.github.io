@@ -134,11 +134,11 @@
       </text>
     </g>
 
-    <text x="630" y="536" fill="#4d5968" font-size="14" font-weight="760" text-anchor="middle">
+    <text x="630" y="528" fill="#4d5968" font-size="14" font-weight="760" text-anchor="middle">
       Total RoboCasa training data used
     </text>
 
-    <text x="630" y="560" fill="#5d6572" font-size="13" text-anchor="middle">
+    <text x="630" y="550" fill="#5d6572" font-size="13" text-anchor="middle">
       <tspan x="630" dy="0">Base and WALA action-labeled only use the same action-labeled data at each x-axis point.</tspan>
       <tspan x="630" dy="18">Mixed WALA keeps 10% labels and uses action-free videos for the remaining budget.</tspan>
     </text>
