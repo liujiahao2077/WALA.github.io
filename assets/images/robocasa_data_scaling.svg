@@ -10,8 +10,8 @@
       <stop offset="100%" stop-color="#256f9f" stop-opacity="0.035"/>
     </linearGradient>
     <linearGradient id="labeledGainFill" x1="0" x2="0" y1="0" y2="1">
-      <stop offset="0%" stop-color="#1f9d75" stop-opacity="0.13"/>
-      <stop offset="100%" stop-color="#1f9d75" stop-opacity="0.028"/>
+      <stop offset="0%" stop-color="#1f9d75" stop-opacity="0.28"/>
+      <stop offset="100%" stop-color="#1f9d75" stop-opacity="0.10"/>
     </linearGradient>
   </defs>
 
