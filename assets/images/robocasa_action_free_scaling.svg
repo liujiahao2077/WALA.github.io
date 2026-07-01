@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 520" role="img" aria-labelledby="title desc">
+  <title id="title">Action-free video scaling on RoboCasa</title>
+  <desc id="desc">Line chart showing WALA performance with 10 percent action-labeled RoboCasa demonstrations and increasing additional action-free videos, with a Base Policy 10 percent labeled baseline.</desc>
+  <defs>
+    <filter id="softShadow" x="-8%" y="-8%" width="116%" height="124%">
+      <feDropShadow dx="0" dy="10" stdDeviation="10" flood-color="#132033" flood-opacity="0.12"/>
+    </filter>
+    <linearGradient id="freeGain" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0%" stop-color="#256f9f" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#256f9f" stop-opacity="0.035"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="720" height="520" fill="#ffffff"/>
+  <rect x="28" y="24" width="664" height="470" rx="18" fill="#fbfdff" stroke="#dfe4ec" filter="url(#softShadow)"/>
+
+  <g font-family="Inter, Arial, sans-serif">
+    <text x="58" y="63" fill="#13151a" font-size="22" font-weight="820">
+      Action-free video scaling
+    </text>
+    <text x="58" y="90" fill="#5d6572" font-size="13.5">
+      Fixed 10% labeled demonstrations.
+    </text>
+
+    <g transform="translate(378 48)">
+      <rect x="0" y="0" width="274" height="64" rx="14" fill="#ffffff" stroke="#dfe4ec"/>
+      <line x1="20" y1="24" x2="58" y2="24" stroke="#256f9f" stroke-width="4.8" stroke-linecap="round"/>
+      <circle cx="39" cy="24" r="7" fill="#ffffff" stroke="#256f9f" stroke-width="3"/>
+      <text x="74" y="29" fill="#16496e" font-size="13.5" font-weight="820">WALA</text>
+      <text x="126" y="29" fill="#5d6572" font-size="12.5" font-weight="680">10% labels + videos</text>
+      <line x1="20" y1="47" x2="58" y2="47" stroke="#7e8794" stroke-width="3.4" stroke-dasharray="7 6" stroke-linecap="round"/>
+      <text x="74" y="52" fill="#5d6572" font-size="13.5" font-weight="760">Base 10% labeled</text>
+    </g>
+
+    <rect x="100" y="132" width="540" height="250" rx="11" fill="#ffffff" stroke="#edf1f6"/>
+    <g stroke="#dfe6ef" stroke-width="1">
+      <line x1="100" y1="132" x2="640" y2="132"/>
+      <line x1="100" y1="194.5" x2="640" y2="194.5"/>
+      <line x1="100" y1="257" x2="640" y2="257"/>
+      <line x1="100" y1="319.5" x2="640" y2="319.5"/>
+      <line x1="100" y1="382" x2="640" y2="382"/>
+    </g>
+    <line x1="100" y1="382" x2="640" y2="382" stroke="#aeb8c5" stroke-width="1.4"/>
+    <line x1="100" y1="132" x2="100" y2="382" stroke="#aeb8c5" stroke-width="1.4"/>
+
+    <g fill="#687282" font-size="12.5">
+      <text x="76" y="136" text-anchor="end">80</text>
+      <text x="76" y="198.5" text-anchor="end">60</text>
+      <text x="76" y="261" text-anchor="end">40</text>
+      <text x="76" y="323.5" text-anchor="end">20</text>
+      <text x="76" y="386" text-anchor="end">0</text>
+    </g>
+    <text x="52" y="257" transform="rotate(-90 52 257)" fill="#5d6572" font-size="13.5" font-weight="720">Success rate (%)</text>
+
+    <path d="M 100 213.6 L 280 187.3 L 460 176.7 L 640 170.1 L 640 325.4 L 100 325.4 Z" fill="url(#freeGain)"/>
+    <line x1="100" y1="325.4" x2="640" y2="325.4" stroke="#7e8794" stroke-width="3.4" stroke-dasharray="8 7" stroke-linecap="round"/>
+    <path d="M 100 213.6 L 280 187.3 L 460 176.7 L 640 170.1" fill="none" stroke="#256f9f" stroke-width="4.8" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <g fill="#ffffff" stroke="#256f9f" stroke-width="3.2">
+      <circle cx="100" cy="213.6" r="7.6"/>
+      <circle cx="280" cy="187.3" r="7.6"/>
+      <circle cx="460" cy="176.7" r="7.6"/>
+      <circle cx="640" cy="170.1" r="7.6"/>
+    </g>
+
+    <g fill="#16496e" font-size="13" font-weight="850">
+      <text x="100" y="192" text-anchor="middle">53.9</text>
+      <text x="280" y="166" text-anchor="middle">62.3</text>
+      <text x="460" y="155" text-anchor="middle">65.7</text>
+      <text x="640" y="148" text-anchor="middle">67.8</text>
+    </g>
+    <text x="575" y="318" fill="#5f6875" font-size="12.5" font-weight="760" text-anchor="middle">Base 10%: 18.1</text>
+
+    <g fill="#3b4654" font-size="13" font-weight="760">
+      <text x="100" y="420" text-anchor="middle">0%</text>
+      <text x="280" y="420" text-anchor="middle">30%</text>
+      <text x="460" y="420" text-anchor="middle">60%</text>
+      <text x="640" y="420" text-anchor="middle">90%</text>
+    </g>
+    <text x="370" y="455" fill="#4d5968" font-size="13.5" font-weight="760" text-anchor="middle">
+      Additional action-free RoboCasa videos
+    </text>
+  </g>
+</svg>
