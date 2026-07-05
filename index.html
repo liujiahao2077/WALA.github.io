@@ -377,21 +377,22 @@
                 <table class="paper-table ablation-table">
                   <colgroup>
                     <col class="ablation-variant-col" />
-                    <col class="ablation-supervision-col" span="3" />
+                    <col class="ablation-supervision-col" span="4" />
                     <col class="ablation-score-col" span="2" />
                   </colgroup>
                   <thead>
                     <tr>
                       <th class="empty-head"></th>
-                      <th colspan="3">Supervision</th>
+                      <th colspan="4">Supervision</th>
                       <th class="empty-head"></th>
                       <th class="empty-head"></th>
                     </tr>
                     <tr>
                       <th>Variant</th>
-                      <th>LAM Target</th>
-                      <th>Semantic Pred.</th>
-                      <th>Geometric Pred.</th>
+                      <th><span class="stacked-head">LAM<br />Pretrain</span></th>
+                      <th><span class="stacked-head">LAM<br />Target</span></th>
+                      <th><span class="stacked-head">Semantic<br />Pred.</span></th>
+                      <th><span class="stacked-head">Geometric<br />Pred.</span></th>
                       <th>Avg.</th>
                       <th>Gain</th>
                     </tr>
@@ -402,11 +403,22 @@
                       <td class="dash">--</td>
                       <td class="dash">--</td>
                       <td class="dash">--</td>
+                      <td class="dash">--</td>
                       <td>54.2</td>
                       <td>--</td>
                     </tr>
                     <tr>
+                      <td>+ World w/o LAM Pretrain</td>
+                      <td class="dash">--</td>
+                      <td class="dash">--</td>
+                      <td class="check">✓</td>
+                      <td class="check">✓</td>
+                      <td>67.8</td>
+                      <td>+13.6</td>
+                    </tr>
+                    <tr>
                       <td>+ Semantic World</td>
+                      <td class="check">✓</td>
                       <td class="dash">--</td>
                       <td class="check">✓</td>
                       <td class="dash">--</td>
@@ -415,6 +427,7 @@
                     </tr>
                     <tr>
                       <td>+ Semantic-Geometric World</td>
+                      <td class="check">✓</td>
                       <td class="dash">--</td>
                       <td class="check">✓</td>
                       <td class="check">✓</td>
@@ -424,6 +437,7 @@
                     <tr>
                       <td>+ LAM Target</td>
                       <td class="check">✓</td>
+                      <td class="check">✓</td>
                       <td class="dash">--</td>
                       <td class="dash">--</td>
                       <td>67.6</td>
@@ -431,6 +445,7 @@
                     </tr>
                     <tr class="ours-row">
                       <td>Full WALA</td>
+                      <td class="check">✓</td>
                       <td class="check">✓</td>
                       <td class="check">✓</td>
                       <td class="check">✓</td>

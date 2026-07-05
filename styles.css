@@ -530,19 +530,41 @@ h3 {
 }
 
 .ablation-variant-col {
-  width: 36%;
+  width: 28%;
 }
 
 .ablation-supervision-col {
-  width: 14%;
+  width: 13%;
 }
 
 .ablation-score-col {
-  width: 11%;
+  width: 10%;
+}
+
+.paper-table.ablation-table th,
+.paper-table.ablation-table td {
+  padding-left: 9px;
+  padding-right: 9px;
 }
 
 .paper-table.ablation-table thead th {
   text-align: center;
+  line-height: 1.15;
+}
+
+.stacked-head {
+  display: inline-flex;
+  flex-direction: column;
+  gap: 2px;
+  align-items: center;
+  line-height: 1.05;
+}
+
+.paper-table.ablation-table thead tr:nth-child(2) th:nth-child(n + 2):nth-child(-n + 5),
+.paper-table.ablation-table tbody td:nth-child(n + 2):nth-child(-n + 5),
+.paper-table.ablation-table thead tr:nth-child(2) th:nth-child(6),
+.paper-table.ablation-table tbody td:nth-child(6) {
+  box-shadow: inset 1px 0 0 rgba(120, 144, 168, 0.18);
 }
 
 .paper-table.ablation-table thead .empty-head {
