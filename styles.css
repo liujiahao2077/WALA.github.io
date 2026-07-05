@@ -505,6 +505,11 @@ h3 {
   font-weight: 790;
 }
 
+.ours-row td.plain-score {
+  color: #1f2933;
+  font-weight: 400 !important;
+}
+
 .best {
   color: var(--blue-deep);
   font-weight: 880;

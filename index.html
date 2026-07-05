@@ -8,7 +8,7 @@
       content="WALA is a framework for learning executable latent actions from action-labeled demonstrations and action-free videos."
     />
     <title>WALA | Learning Executable Latent Actions</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="styles.css?v=regular-clean" />
   </head>
   <body>
     <header class="site-header" aria-label="Site header">
@@ -176,11 +176,10 @@
         <div class="section-inner">
           <p class="section-kicker">Experiments</p>
           <div class="tables-stack">
-            <!--
             <article class="table-card">
               <div class="table-heading">
                 <span class="result-tag">RoboTwin 2.0</span>
-                <h3>Main results under Easy and Hard settings</h3>
+                <h3>Main results on RoboTwin</h3>
               </div>
               <div class="table-wrap">
                 <table class="paper-table">
@@ -188,9 +187,8 @@
                     <tr>
                       <th>Group</th>
                       <th>Method</th>
-                      <th>Easy</th>
-                      <th>Hard</th>
-                      <th>Avg.</th>
+                      <th>Clean</th>
+                      <th>Random</th>
                     </tr>
                   </thead>
                   <tbody>
@@ -199,45 +197,43 @@
                       <td>π<sub>0.5</sub></td>
                       <td>82.7</td>
                       <td>76.8</td>
-                      <td>79.7</td>
                     </tr>
                     <tr>
                       <td>X-VLA</td>
                       <td>70.0</td>
                       <td>69.0</td>
-                      <td>69.5</td>
                     </tr>
                     <tr>
                       <td>StarVLA-α</td>
                       <td>88.2</td>
-                      <td>88.3</td>
                       <td>88.3</td>
                     </tr>
                     <tr>
                       <td>InternVLA-A1</td>
                       <td>89.4</td>
                       <td>89.6</td>
-                      <td>89.5</td>
                     </tr>
                     <tr class="section-break">
-                      <td class="group-cell" rowspan="2">WAM-based</td>
+                      <td class="group-cell" rowspan="3">WAM-based</td>
+                      <td>Motus</td>
+                      <td>88.7</td>
+                      <td>87.0</td>
+                    </tr>
+                    <tr>
                       <td>Fast-WAM</td>
-                      <td>91.9</td>
+                      <td><span class="second">91.9</span></td>
                       <td><span class="second">91.8</span></td>
-                      <td>91.8</td>
                     </tr>
                     <tr>
                       <td>LingBot-VA</td>
-                      <td><span class="second">92.9</span></td>
+                      <td><span class="best">92.9</span></td>
                       <td>91.5</td>
-                      <td><span class="second">92.2</span></td>
                     </tr>
                     <tr class="ours-row">
                       <td class="group-cell">Ours</td>
                       <td>WALA</td>
-                      <td>TBD</td>
-                      <td>TBD</td>
-                      <td>TBD</td>
+                      <td class="plain-score">90.6</td>
+                      <td><span class="best">92.8</span></td>
                     </tr>
                   </tbody>
                 </table>
@@ -246,7 +242,6 @@
                 Baseline results are collected from publicly released reports.
               </p>
             </article>
-            -->
 
             <article class="table-card">
               <div class="table-heading">
