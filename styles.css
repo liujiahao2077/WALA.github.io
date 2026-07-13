@@ -266,6 +266,10 @@ h3 {
   cursor: default;
 }
 
+.resource-actions .button {
+  width: 196px;
+}
+
 .section {
   padding: clamp(58px, 8vw, 110px) clamp(18px, 4vw, 54px);
 }
