@@ -221,6 +221,15 @@ h3 {
   background: rgba(255, 255, 255, 0.19);
 }
 
+.icon-link.disabled-link {
+  cursor: default;
+}
+
+.icon-link.disabled-link:hover {
+  border-color: rgba(255, 255, 255, 0.38);
+  background: rgba(255, 255, 255, 0.12);
+}
+
 .icon-link svg {
   width: 22px;
   height: 22px;
@@ -399,8 +408,23 @@ h3 {
 
 .real-robot-card .table-note {
   padding: 18px 24px 24px;
-  border-top: 0;
+  border-top: 1px solid var(--line);
   font-size: 0.98rem;
+}
+
+.real-robot-table {
+  min-width: 1080px;
+  font-size: 0.88rem;
+}
+
+.real-robot-table th,
+.real-robot-table td {
+  padding-left: 9px;
+  padding-right: 9px;
+}
+
+.real-robot-table .soft-row td {
+  background: #f7fbfe;
 }
 
 .chart-wrap {
@@ -716,7 +740,19 @@ h3 {
   margin-top: 34px;
 }
 
-.video-tile {
+.video-subsection {
+  margin-top: clamp(44px, 6vw, 76px);
+}
+
+.real-video-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+  margin-top: 22px;
+}
+
+.video-tile,
+.real-video-tile {
   min-width: 0;
   overflow: hidden;
   border: 1px solid var(--line);
@@ -725,14 +761,20 @@ h3 {
   box-shadow: 0 8px 22px rgba(19, 27, 38, 0.08);
 }
 
-.video-tile video {
+.video-tile video,
+.real-video-tile video {
   width: 100%;
   aspect-ratio: 4 / 3;
   object-fit: cover;
   background: #111820;
 }
 
-.video-tile span {
+.real-video-tile video {
+  aspect-ratio: 16 / 9;
+}
+
+.video-tile span,
+.real-video-tile span {
   display: block;
   padding: 9px 10px 10px;
   overflow: hidden;
@@ -904,6 +946,10 @@ h3 {
   .robocasa-video-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 10px;
+  }
+
+  .real-video-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .site-footer {
