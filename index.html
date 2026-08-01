@@ -532,28 +532,103 @@
 
       <section id="videos" class="section videos-section">
         <div class="section-inner">
-          <p class="section-kicker">Real-World Robot Demo Videos</p>
-          <div class="real-video-grid">
-            <article class="real-video-tile">
-              <video controls muted playsinline preload="metadata" src="assets/videos/real_world/putao.mp4"></video>
-              <span>Basic Pick-Place</span>
+          <div class="video-section-heading">
+            <p class="section-kicker">Real-World Policy Rollouts</p>
+            <h2>Method Comparison</h2>
+            <p>
+              Policy rollouts across four real-world manipulation tasks.
+            </p>
+          </div>
+
+          <div class="real-video-comparison" aria-label="Real-world policy rollout comparison">
+            <div class="comparison-header" aria-hidden="true">
+              <span>Task</span>
+              <span class="math-label">&pi;<sub>0.5</sub></span>
+              <span>WALA</span>
+            </div>
+
+            <article class="comparison-row">
+              <h3>Basic Pick-Place</h3>
+              <figure class="comparison-video" data-policy="&pi;0.5">
+                <video controls muted playsinline preload="metadata" src="assets/videos/real_world/openpi_putao.mp4" aria-label="Pi 0.5 rollout for Basic Pick-Place"></video>
+              </figure>
+              <figure class="comparison-video wala-comparison-video" data-policy="WALA">
+                <video controls muted playsinline preload="metadata" src="assets/videos/real_world/putao.mp4" aria-label="WALA rollout for Basic Pick-Place"></video>
+              </figure>
             </article>
-            <article class="real-video-tile">
-              <video controls muted playsinline preload="metadata" src="assets/videos/real_world/zhibei.mp4"></video>
-              <span>Stack Paper Cups</span>
+
+            <article class="comparison-row">
+              <h3>Stack Paper Cups</h3>
+              <figure class="comparison-video" data-policy="&pi;0.5">
+                <video controls muted playsinline preload="metadata" src="assets/videos/real_world/openpi_zhibei.mp4" aria-label="Pi 0.5 rollout for Stack Paper Cups"></video>
+              </figure>
+              <figure class="comparison-video wala-comparison-video" data-policy="WALA">
+                <video controls muted playsinline preload="metadata" src="assets/videos/real_world/zhibei.mp4" aria-label="WALA rollout for Stack Paper Cups"></video>
+              </figure>
             </article>
-            <article class="real-video-tile">
-              <video controls muted playsinline preload="metadata" src="assets/videos/real_world/chahua.mp4"></video>
-              <span>Insert Flowers</span>
+
+            <article class="comparison-row">
+              <h3>Insert Flowers</h3>
+              <figure class="comparison-video" data-policy="&pi;0.5">
+                <video controls muted playsinline preload="metadata" src="assets/videos/real_world/openpi_chahua.mp4" aria-label="Pi 0.5 rollout for Insert Flowers"></video>
+              </figure>
+              <figure class="comparison-video wala-comparison-video" data-policy="WALA">
+                <video controls muted playsinline preload="metadata" src="assets/videos/real_world/chahua.mp4" aria-label="WALA rollout for Insert Flowers"></video>
+              </figure>
             </article>
-            <article class="real-video-tile">
-              <video controls muted playsinline preload="metadata" src="assets/videos/real_world/jimu.mp4"></video>
-              <span>Disassemble Blocks</span>
+
+            <article class="comparison-row">
+              <h3>Disassemble Blocks</h3>
+              <figure class="comparison-video" data-policy="&pi;0.5">
+                <video controls muted playsinline preload="metadata" src="assets/videos/real_world/openpi_jimu.mp4" aria-label="Pi 0.5 rollout for Disassemble Blocks"></video>
+              </figure>
+              <figure class="comparison-video wala-comparison-video" data-policy="WALA">
+                <video controls muted playsinline preload="metadata" src="assets/videos/real_world/jimu.mp4" aria-label="WALA rollout for Disassemble Blocks"></video>
+              </figure>
             </article>
           </div>
+
+          <div id="human-video-transfer" class="transfer-showcase">
+            <div class="transfer-heading">
+              <p class="section-kicker">Human-Video Transfer</p>
+              <h2>Zero-shot and few-shot generalization</h2>
+            </div>
+
+            <div class="transfer-video-grid">
+              <article class="transfer-video-card">
+                <div class="transfer-card-copy">
+                  <span class="transfer-label">Zero-Shot</span>
+                  <h3>Pick Up Bread and Place It on a Plate</h3>
+                </div>
+                <video controls muted playsinline preload="metadata" src="assets/videos/real_world/mianbao.mp4" aria-label="WALA zero-shot rollout for picking up bread and placing it on a plate"></video>
+              </article>
+              <article class="transfer-video-card">
+                <div class="transfer-card-copy">
+                  <span class="transfer-label">Few-Shot</span>
+                  <h3>Turn On the Lamp</h3>
+                </div>
+                <video controls muted playsinline preload="metadata" src="assets/videos/real_world/deng.mp4" aria-label="WALA few-shot rollout for turning on a lamp"></video>
+              </article>
+              <article class="transfer-video-card">
+                <div class="transfer-card-copy">
+                  <span class="transfer-label">Few-Shot</span>
+                  <h3>Open the Cabinet Door</h3>
+                </div>
+                <video controls muted playsinline preload="metadata" src="assets/videos/real_world/open_door.mp4" aria-label="WALA few-shot rollout for opening a cabinet door"></video>
+              </article>
+              <article class="transfer-video-card">
+                <div class="transfer-card-copy">
+                  <span class="transfer-label">Few-Shot</span>
+                  <h3>Pick and Place a Pen, then Close the Door</h3>
+                </div>
+                <video controls muted playsinline preload="metadata" src="assets/videos/real_world/pick_place_pen_close_door.mp4" aria-label="WALA few-shot rollout for picking and placing a pen and closing the door"></video>
+              </article>
+            </div>
+          </div>
+
           <div class="video-subsection">
             <p class="section-kicker">RoboCasa Simulation Rollout Videos</p>
-          <div class="robocasa-video-grid">
+            <div class="robocasa-video-grid">
             <article class="video-tile"><video controls muted playsinline preload="metadata" src="assets/videos/robocasa/rollout_01.mp4"></video></article>
             <article class="video-tile"><video controls muted playsinline preload="metadata" src="assets/videos/robocasa/rollout_02.mp4"></video></article>
             <article class="video-tile"><video controls muted playsinline preload="metadata" src="assets/videos/robocasa/rollout_03.mp4"></video></article>
@@ -578,7 +653,7 @@
             <article class="video-tile"><video controls muted playsinline preload="metadata" src="assets/videos/robocasa/rollout_22.mp4"></video></article>
             <article class="video-tile"><video controls muted playsinline preload="metadata" src="assets/videos/robocasa/rollout_23.mp4"></video></article>
             <article class="video-tile"><video controls muted playsinline preload="metadata" src="assets/videos/robocasa/rollout_24.mp4"></video></article>
-          </div>
+            </div>
           </div>
         </div>
       </section>

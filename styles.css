@@ -748,11 +748,143 @@ h3 {
   margin-top: clamp(44px, 6vw, 76px);
 }
 
-.real-video-grid {
+.video-section-heading {
+  width: min(760px, 100%);
+}
+
+.video-section-heading h2,
+.transfer-heading h2 {
+  margin-bottom: 14px;
+  font-size: clamp(1.9rem, 3vw, 3rem);
+}
+
+.video-section-heading p:last-child {
+  margin-bottom: 0;
+  color: var(--muted);
+  font-size: 1.02rem;
+}
+
+.video-section-heading sub,
+.comparison-header sub {
+  font-size: 0.7em;
+}
+
+.real-video-comparison {
+  margin-top: 34px;
+  border-top: 2px solid var(--ink);
+  border-bottom: 1px solid var(--line);
+}
+
+.comparison-header,
+.comparison-row {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: 164px repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.comparison-header {
+  align-items: center;
+  padding: 12px 0;
+  color: #343d48;
+  border-bottom: 1px solid var(--line);
+  font-size: 0.78rem;
+  font-weight: 820;
+  letter-spacing: 0.06em;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.comparison-header span:first-child {
+  text-align: left;
+}
+
+.comparison-header span:last-child {
+  color: var(--blue-deep);
+}
+
+.comparison-header .math-label {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1rem;
+  letter-spacing: 0;
+  text-transform: none;
+}
+
+.comparison-row {
+  align-items: center;
+  padding: 18px 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.comparison-row:last-child {
+  border-bottom: 0;
+}
+
+.comparison-row h3 {
+  margin: 0;
+  color: #28313c;
+  font-size: 1rem;
+  font-weight: 780;
+}
+
+.comparison-video {
+  min-width: 0;
+  margin: 0;
+}
+
+.comparison-video video,
+.transfer-video-card video {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  background: #111820;
+  border: 1px solid #d7dde5;
+  border-radius: 6px;
+  box-shadow: 0 7px 18px rgba(19, 27, 38, 0.08);
+}
+
+.wala-comparison-video video {
+  border-color: rgba(37, 111, 159, 0.48);
+}
+
+.transfer-showcase {
+  margin-top: clamp(56px, 8vw, 94px);
+  padding-top: clamp(40px, 5vw, 64px);
+  border-top: 1px solid var(--line);
+}
+
+.transfer-heading {
+  width: min(760px, 100%);
+}
+
+.transfer-video-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 16px;
-  margin-top: 22px;
+  margin-top: 30px;
+  padding-top: 18px;
+  border-top: 2px solid var(--ink);
+}
+
+.transfer-video-card {
+  min-width: 0;
+}
+
+.transfer-card-copy {
+  min-height: 82px;
+}
+
+.transfer-card-copy h3 {
+  margin: 8px 0 0;
+  font-size: 1rem;
+}
+
+.transfer-label {
+  display: block;
+  color: var(--blue-deep);
+  font-size: 0.76rem;
+  font-weight: 850;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
 }
 
 .video-tile,
@@ -899,8 +1031,53 @@ h3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
+  .comparison-header,
+  .comparison-row {
+    grid-template-columns: 136px repeat(2, minmax(0, 1fr));
+    gap: 14px;
+  }
+
+  .transfer-video-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    row-gap: 28px;
+  }
+
   .chart-split {
     grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 760px) {
+  .comparison-header {
+    display: none;
+  }
+
+  .comparison-row {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+  }
+
+  .comparison-row h3 {
+    grid-column: 1 / -1;
+    margin-bottom: 2px;
+  }
+
+  .comparison-video::before {
+    content: attr(data-policy);
+    display: block;
+    margin-bottom: 7px;
+    color: #4b5562;
+    font-size: 0.72rem;
+    font-weight: 820;
+    letter-spacing: 0.05em;
+  }
+
+  .wala-comparison-video::before {
+    color: var(--blue-deep);
+  }
+
+  .transfer-card-copy {
+    min-height: 64px;
   }
 }
 
@@ -952,8 +1129,18 @@ h3 {
     gap: 10px;
   }
 
-  .real-video-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+  .comparison-row,
+  .transfer-video-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .comparison-row h3 {
+    grid-column: auto;
+  }
+
+  .transfer-card-copy {
+    min-height: 0;
+    margin-bottom: 12px;
   }
 
   .site-footer {
