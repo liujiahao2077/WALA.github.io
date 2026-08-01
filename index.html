@@ -480,7 +480,41 @@
                       <td>190 ms</td>
                     </tr>
                     <tr class="section-break">
-                      <td class="group-cell" rowspan="3">Ours</td>
+                      <td class="group-cell" rowspan="3">Ours<br />low-label</td>
+                      <td>WALA</td>
+                      <td>50</td>
+                      <td>0</td>
+                      <td>26/30</td>
+                      <td>18/30</td>
+                      <td>17/30</td>
+                      <td>15/30</td>
+                      <td>63.3</td>
+                      <td>70 ms</td>
+                    </tr>
+                    <tr>
+                      <td>WALA</td>
+                      <td>50</td>
+                      <td>150</td>
+                      <td>28/30</td>
+                      <td>21/30</td>
+                      <td>18/30</td>
+                      <td>17/30</td>
+                      <td>70.0</td>
+                      <td>70 ms</td>
+                    </tr>
+                    <tr>
+                      <td>WALA</td>
+                      <td>50</td>
+                      <td>400</td>
+                      <td>30/30</td>
+                      <td>23/30</td>
+                      <td>19/30</td>
+                      <td>17/30</td>
+                      <td>74.2</td>
+                      <td>70 ms</td>
+                    </tr>
+                    <tr class="section-break">
+                      <td class="group-cell" rowspan="2">Ours<br />full-label</td>
                       <td>WALA</td>
                       <td>200</td>
                       <td>0</td>
@@ -489,18 +523,7 @@
                       <td>21/30</td>
                       <td>20/30</td>
                       <td>75.0</td>
-                      <td><span class="best">70 ms</span></td>
-                    </tr>
-                    <tr class="ours-row soft-row">
-                      <td>WALA</td>
-                      <td>50</td>
-                      <td>400</td>
-                      <td>26/30</td>
-                      <td>21/30</td>
-                      <td>17/30</td>
-                      <td>17/30</td>
-                      <td>67.5</td>
-                      <td><span class="best">70 ms</span></td>
+                      <td>70 ms</td>
                     </tr>
                     <tr class="ours-row">
                       <td>WALA</td>
@@ -511,19 +534,21 @@
                       <td><span class="best">24/30</span></td>
                       <td><span class="best">21/30</span></td>
                       <td><span class="best">83.3</span></td>
-                      <td><span class="best">70 ms</span></td>
+                      <td>70 ms</td>
                     </tr>
                   </tbody>
                 </table>
               </div>
               <p class="table-note">
                 Each policy is trained as a single multi-task model and
-                evaluated over 30 trials per task. Adding action-free
-                similar-scene human videos improves WALA from 75.0% to 83.3%.
-                With only 50 robot demonstrations per task and 400 human
-                videos, WALA still outperforms both baselines trained with 200
-                robot demonstrations per task. Latency is measured on an RTX
-                4090 GPU.
+                evaluated over 30 trials per task. With 50 robot
+                demonstrations per task, adding 150 and 400 action-free
+                similar-scene human videos improves WALA from 63.3% to 70.0%
+                and 74.2%, respectively. The 50-demo setting with 400 human
+                videos nearly matches the 75.0% achieved using 200 robot
+                demonstrations alone. Adding 400 human videos to the
+                full-label setting further improves WALA to 83.3%. Latency is
+                measured on an RTX 4090 GPU.
               </p>
             </article>
           </div>
