@@ -27,11 +27,14 @@
 
     <main id="top">
       <section class="hero" aria-labelledby="hero-title">
-        <img
-          class="hero-bg"
-          src="assets/images/wala_policy.png"
-          alt="WALA policy training framework with latent action targets, future dynamics prediction, and robot action prediction."
-        />
+        <div
+          class="hero-bg pdf-source"
+          data-pdf="assets/images/wala_policy.pdf"
+          data-pdf-fit="cover"
+          aria-hidden="true"
+        >
+          <canvas class="pdf-canvas"></canvas>
+        </div>
         <div class="hero-shade"></div>
         <div class="hero-content">
           <p class="eyebrow">
@@ -136,10 +139,18 @@
           </p>
           <div class="figure-grid">
             <figure class="figure-panel lam-figure">
-              <img
-                src="assets/images/wala_lam.png"
-                alt="Semantic-geometric latent action model pretraining diagram."
-              />
+              <div
+                class="pdf-figure lam-pdf pdf-source"
+                data-pdf="assets/images/wala_lam.pdf"
+                data-pdf-fit="contain"
+                role="img"
+                aria-label="Semantic-geometric latent action model pretraining diagram."
+              >
+                <canvas class="pdf-canvas" aria-hidden="true"></canvas>
+                <a class="pdf-fallback" href="assets/images/wala_lam.pdf">
+                  Open the LAM diagram as a PDF
+                </a>
+              </div>
               <figcaption>
                 <strong>Semantic-geometric latent action model pretraining.</strong>
                 Given the current observation and multiple sparsely sampled
@@ -153,10 +164,18 @@
               </figcaption>
             </figure>
             <figure class="figure-panel">
-              <img
-                src="assets/images/wala_policy.png"
-                alt="Policy training diagram with latent world model supervision."
-              />
+              <div
+                class="pdf-figure policy-pdf pdf-source"
+                data-pdf="assets/images/wala_policy.pdf"
+                data-pdf-fit="contain"
+                role="img"
+                aria-label="Policy training diagram with latent world model supervision."
+              >
+                <canvas class="pdf-canvas" aria-hidden="true"></canvas>
+                <a class="pdf-fallback" href="assets/images/wala_policy.pdf">
+                  Open the policy diagram as a PDF
+                </a>
+              </div>
               <figcaption>
                 <strong>Policy training.</strong>
                 The pretrained latent action encoder is frozen and provides
@@ -701,5 +720,6 @@
       <span>WALA</span>
       <span>Learning Executable Latent Actions from Action-Labeled Demonstrations and Action-Free Videos</span>
     </footer>
+    <script type="module" src="assets/js/pdf-renderer.mjs"></script>
   </body>
 </html>
