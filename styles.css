@@ -418,7 +418,7 @@ h3 {
   display: none;
 }
 
-.pdf-figure .pdf-canvas {
+.pdf-source .pdf-canvas {
   visibility: hidden;
 }
 

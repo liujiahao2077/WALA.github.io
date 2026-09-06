@@ -52,6 +52,7 @@ async function renderPdf(container) {
   }
   if (renderVersions.get(container) !== version) return;
 
+  container.classList.remove("pdf-rendered");
   canvas.width = Math.ceil(viewport.width);
   canvas.height = Math.ceil(viewport.height);
   canvas.style.width = `${cssWidth}px`;
