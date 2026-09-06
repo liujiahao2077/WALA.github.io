@@ -8,6 +8,7 @@ pdfjsLib.GlobalWorkerOptions.workerSrc = new URL(
 const pdfCache = new Map();
 const renderTimers = new WeakMap();
 const renderVersions = new WeakMap();
+const renderTasks = new WeakMap();
 
 function loadPdf(url) {
   if (!pdfCache.has(url)) {
@@ -40,6 +41,17 @@ async function renderPdf(container) {
   const cssWidth = viewport.width / pixelRatio;
   const cssHeight = viewport.height / pixelRatio;
 
+  const previousTask = renderTasks.get(container);
+  if (previousTask) {
+    previousTask.cancel();
+    try {
+      await previousTask.promise;
+    } catch (error) {
+      if (error.name !== "RenderingCancelledException") throw error;
+    }
+  }
+  if (renderVersions.get(container) !== version) return;
+
   canvas.width = Math.ceil(viewport.width);
   canvas.height = Math.ceil(viewport.height);
   canvas.style.width = `${cssWidth}px`;
@@ -51,11 +63,20 @@ async function renderPdf(container) {
   context.fillRect(0, 0, canvas.width, canvas.height);
   context.restore();
 
-  await page.render({
+  const task = page.render({
     canvasContext: context,
     viewport,
     background: "#ffffff",
-  }).promise;
+  });
+  renderTasks.set(container, task);
+  try {
+    await task.promise;
+  } catch (error) {
+    if (error.name === "RenderingCancelledException") return;
+    throw error;
+  } finally {
+    if (renderTasks.get(container) === task) renderTasks.delete(container);
+  }
 
   if (renderVersions.get(container) === version) {
     container.classList.add("pdf-rendered");
